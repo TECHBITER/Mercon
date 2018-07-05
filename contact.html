@@ -22,12 +22,12 @@
     <!-- Loader-->
     <div id="page-preloader"><span class="spinner"></span></div>
     <!-- Loader end-->
-    
+
     <div data-header="sticky" data-header-top="200" class="l-theme animated-css">
       <!-- Start Switcher-->
       <div class="switcher-wrapper">
         <div class="demo_changer">
-   
+
           <div class="form_holder">
             <div class="predefined_styles">
               <div class="skin-theme-switcher">
@@ -38,7 +38,7 @@
         </div>
       </div>
       <!-- end switcher-->
-      
+
       <!-- ==========================-->
       <!-- MOBILE MENU-->
       <!-- ==========================-->
@@ -53,8 +53,8 @@
         </ul>
       </div>
       <!-- end mobile menu-->
-      
-      
+
+
       <header class="header header-topbar-view header-logo-white header-topbarbox-1-left header-topbarbox-2-right header-navibox-1-left header-navibox-2-right header-navibox-3-right navbar-fixed-top">
         <div class="top-bar clearfix">
           <div class="container">
@@ -82,7 +82,7 @@
           </div>
         </div>
         <!-- end top-bar-->
-        
+
         <nav id="nav" class="navbar header-main">
           <div class="container">
             <div class="row">
@@ -109,8 +109,8 @@
         <!-- end header-main-->
       </header>
       <!-- end header-->
-      
-      
+
+
       <div data-stellar-background-ratio="0.4" data-stellar-vertical-offset="0" class="section-title-page section-bg_dark-3 section-bg parallax">
         <div class="section-bg__inner">
           <div class="container">
@@ -130,7 +130,7 @@
         </div>
       </div>
       <!-- end b-title-page-->
-      
+
       <section class="section-default">
         <div class="container">
           <div class="row">
@@ -166,7 +166,7 @@
         </div>
       </section>
       <!-- end section-default-->
-      
+
       <section class="section-area">
         <div class="container">
           <div class="row">
@@ -176,18 +176,18 @@
             <div class="col-sm-8">
               <h2 class="ui-title-block"><span class="ui-title-block__emphasis">Send Us</span> Message</h2>
               <p>Join hands to experience and work with one of India’s fast growing logistic companies. We have the experience, network and technical and logical expertise to manage your cargos throughout South India. Hold on to your seats and fix a meeting immediately with us. Your time is our privilege. For more queries, please contact us</p>
-              <form class="b-form-1 b-form-1_mod-b ui-form">
+              <form class="b-form-1 b-form-1_mod-b ui-form" id="mail-form" action="mailer/mailer.php" novalidate autocomplete="off">
                 <div class="row">
                   <div class="col-md-6">
-                    <input type="text" placeholder="Full Name" class="form-control">
+                    <input type="text" name="name" placeholder="Full Name" class="form-control">
                   </div>
                   <div class="col-md-6">
-                    <input type="email" placeholder="Email address" class="form-control">
+                    <input type="email" name="email" placeholder="Email address" class="form-control">
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-xs-12">
-                    <select class="selectpicker">
+                    <select class="selectpicker" name="subject">
                       <option>Write a Subject</option>
                       <option>General</option>
                       <option>Complaint</option>
@@ -197,8 +197,8 @@
                 </div>
                 <div class="row">
                   <div class="col-xs-12">
-                    <textarea rows="5" placeholder="Message" class="form-control"></textarea>
-                    <button type="button" class="btn btn-default btn-w-ic btn-sm btn-effect">send message<i class="icon fa fa-long-arrow-right"></i></button>
+                    <textarea rows="5" placeholder="Message" name="message" class="form-control"></textarea>
+                    <button type="button" class="btn btn-default btn-w-ic btn-sm btn-effect" id="send-message" type="submit">send message<i class="icon fa fa-long-arrow-right"></i></button>
                   </div>
                 </div>
               </form>
@@ -208,7 +208,7 @@
         </div>
       </section>
       <!-- end section-area-->
-      
+
       <div class="section-contacts-1 bg-primary wow">
         <div class="container">
           <div class="row">
@@ -228,13 +228,13 @@
                 </div>
               </div>
               <!-- end b-contacts-->
-              
+
             </div>
           </div>
         </div>
       </div>
       <!-- end section-contacts-1-->
-      
+
       <footer class="footer">
         <div class="footer__main section-bg section-bg_dark parallax-bg">
           <ul class="bg-slideshow">
@@ -304,7 +304,7 @@
           </div>
         </div>
         <!-- end footer__main-->
-        
+
         <div class="copyright">
           <div class="container">
             <div class="row">
@@ -330,8 +330,8 @@
       <!-- end footer-->
     </div>
     <!-- end layout-theme-->
-    
-    
+
+
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/custom.js"></script>
     <script src="assets//plugins/header/slidebar.js"></script>
@@ -349,7 +349,7 @@
     <script src="assets/plugins/switcher/js/dmss.js"></script>
     <script src="assets/plugins/stellar/src/jquery.stellar.js"></script>
     <script src="assets/plugins/rendro-easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
-      
+
     <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <script src="assets/js/custom-map.js"></script>
   </body>
